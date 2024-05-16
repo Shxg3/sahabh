@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار تحصيلي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            margin-top: 0;
+        }
+
+        .answer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .answer:hover {
+            background-color: #f0f0f0;
+        }
+
+        .answer input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .result h2 {
+            color: #007bff;
+        }
+
+        .result p {
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>اختبار تحصيلي</h1>
+    </header>
+
+    <main>
+        <form id="test-form">
+            <div class="question">
+                <h3>السؤال 1: اختر المفردة الشاذة؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q1" value="a">
+                    <label>أ. شاي</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q1" value="b">
+                    <label>ب. قهوة</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q1" value="c">
+                    <label>ج. عصير</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q1" value="d">
+                    <label>د. حليب</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>السؤال 2: ما هي أطول نهر في العالم؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q2" value="a">
+                    <label>أ. نهر النيل</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q2" value="b">
+                    <label>ب. نهر الأمازون</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q2" value="c">
+                    <label>ج. نهر المسيسيبي</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q2" value="d">
+                    <label>د. نهر الكونغو</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>السؤال 3: ما هي أكبر دولة في العالم من حيث المساحة؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q3" value="a">
+                    <label>أ. روسيا</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q3" value="b">
+                    <label>ب. كندا</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q3" value="c">
+                    <label>ج. الصين</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q3" value="d">
+                    <label>د. الولايات المتحدة الأمريكية</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>السؤال 4: ما هو أكبر محيط في العالم؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q4" value="a">
+                    <label>أ. المحيط الهادئ</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q4" value="b">
+                    <label>ب. المحيط الأطلسي</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q4" value="c">
+                    <label>ج. المحيط الهندي</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q4" value="d">
+                    <label>د. المحيط القطبي الشمالي</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>السؤال 5: ما هي أعلى قمة جبلية في العالم؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q5" value="a">
+                    <label>أ. جبل ماكينلي</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q5" value="b">
+                    <label>ب. جبل إيفرست</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q5" value="c">
+                    <label>ج. جبل كليمنجارو</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q5" value="d">
+                    <label>د. جبل فوجي</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>السؤال 6: ما هي أشهر علامة تجارية لأجهزة الكمبيوتر الشخصية؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q6" value="a">
+                    <label>أ. آبل</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q6" value="b">
+                    <label>ب. مايكروسوفت</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q6" value="c">
+                    <label>ج. إتش بي</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q6" value="d">
+                    <label>د. ديل</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>السؤال 7: ما هو أكبر قارة في العالم؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q7" value="a">
+                    <label>أ. آسيا</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q7" value="b">
+                    <label>ب. أفريقيا</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q7" value="c">
+                    <label>ج. أوروبا</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q7" value="d">
+                    <label>د. أمريكا الشمالية</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>السؤال 8: ما هي أطول لغة في العالم من حيث عدد الحروف؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q8" value="a">
+                    <label>أ. اللغة الإنجليزية</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q8" value="b">
+                    <label>ب. اللغة العربية</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q8" value="c">
+                    <label>ج. اللغة الصينية</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q8" value="d">
+                    <label>د. اللغة الألمانية</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>السؤال 1: ما هي عاصمة المملكة العربية السعودية؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q9" value="a">
+                    <label>أ. الرياض</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q9" value="b">
+                    <label>ب. جدة</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q9" value="c">
+                    <label>ج. مكة المكرمة</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q9" value="d">
+                    <label>د. المدينة المنورة</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>السؤال 1: ما هي عاصمة المملكة العربية السعودية؟</h3>
+                <div class="answer">
+                    <input type="radio" name="q10" value="a">
+                    <label>أ. الرياض</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q10" value="b">
+                    <label>ب. جدة</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q10" value="c">
+                    <label>ج. مكة المكرمة</label>
+                </div>
+                <div class="answer">
+                    <input type="radio" name="q10" value="d">
+                    <label>د. المدينة المنورة</label>
+                </div>
+            </div>
+            <div class="result">
+                <h2 id="result-score">النتيجة: 0/10</h2>
+                <p>انقر على الزر أدناه للحصول على النتيجة النهائية.</p>
+                <a href="#" class="btn" onclick="calculateResult(); return false;">عرض النتيجة</a>
+            </div>
+        </form>
+    </main>
+
+    <div class="result">
+        <a href="#" class="btn" onclick="window.location.href = 'index.html';" >
+            عودة
+        </a>
+    </div>
+
+    <script>
+        const form = document.getElementById('test-form');
+        const resultScore = document.getElementById('result-score');
+    
+        function calculateResult() {
+            let score = 0;
+    
+            // Check answers for all 10 questions
+            const q1Answer = form.elements.q1.value;
+            if (q1Answer === 'a') {
+                score++;
+            }
+    
+            const q2Answer = form.elements.q2.value;
+            if (q2Answer === 'b') {
+                score++;
+            }
+    
+            const q3Answer = form.elements.q3.value;
+            if (q3Answer === 'c') {
+                score++;
+            }
+    
+            const q4Answer = form.elements.q4.value;
+            if (q4Answer === 'd') {
+                score++;
+            }
+    
+            const q5Answer = form.elements.q5.value;
+            if (q5Answer === 'a') {
+                score++;
+            }
+    
+            const q6Answer = form.elements.q6.value;
+            if (q6Answer === 'b') {
+                score++;
+            }
+    
+            const q7Answer = form.elements.q7.value;
+            if (q7Answer === 'c') {
+                score++;
+            }
+    
+            const q8Answer = form.elements.q8.value;
+            if (q8Answer === 'd') {
+                score++;
+            }
+    
+            const q9Answer = form.elements.q9.value;
+            if (q9Answer === 'a') {
+                score++;
+            }
+    
+            const q10Answer = form.elements.q10.value;
+            if (q10Answer === 'b') {
+                score++;
+            }
+    
+            resultScore.textContent = `النتيجة: ${score}/10`;
+        }
+    </script>
+</body>
+</html>
